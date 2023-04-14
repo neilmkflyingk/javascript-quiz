@@ -1,0 +1,124 @@
+body {
+    background-color: #DCC795;
+    display: flex;
+    width: 100%;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+header {
+    margin: 10px;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+/* high scores 'link' */
+#scores {
+    margin: 10px;
+    color: blue;
+}
+
+header h1 {
+    width: 40%;
+    text-align: center;
+}
+
+/* feedback */
+#cardfooter {
+    display: none;
+}
+
+/* high scores */
+#scoresList {
+    list-style: none;
+}
+
+/* timer count */
+#time {
+    color: red;
+}
+
+/* main section of page */
+.card {
+    width: 40%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+/* instructions/rules */
+.card-header {
+    text-align: center;
+}
+
+/* questions and options */
+.question-container {
+    flex-direction: column;
+    display: none;
+    width: 50%;
+    align-items: center;
+}
+
+#question {
+    display: flex;
+    text-align: center;
+    margin: 5px;
+    font-size: 20px;
+}
+
+/* answer options */
+.questionButton {
+    width: fit-content;
+    background-color: aqua;
+    margin: 5px;
+    border-radius: 12px;
+}
+
+/* feedback container */
+.card-footer {
+    font-size: 30px;
+    display: flex;
+    width: 75%;
+    justify-content: center;
+}
+
+.startbtn {
+    color: black;
+    background-color: red;
+    font-size: 40px;
+    margin-top: 50px;
+}
+
+/* contains save score and high score overlays */
+.container {
+    width: 100%;
+    height: auto;
+    display: none;
+    flex-direction: column;
+}
+
+.overlaySave {
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.overlayScores {
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
